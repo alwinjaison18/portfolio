@@ -3,16 +3,14 @@ import AnimatedSection from './AnimatedSection'
 const EXPERIENCES = [
   {
     role: 'Frontend Developer Intern',
-    company: 'Corestrat.ai',
+    company: 'Corestrat',
     type: 'internship',
     duration: '2026 — 3 months',
     tagline: 'Migrated a legacy desktop app to a modern web platform, end-to-end.',
     contributions: [
-      'Led the migration of a desktop-based application to a modern React + TypeScript web platform — owned architecture decisions from day one',
-      'Designed and implemented scalable state management using Redux, resolving data-flow inconsistencies that blocked the previous system',
-      'Built the interactive UI for a no-code model-building platform — users could now design ML workflows without writing a single line of code',
-      'Improved responsiveness and cross-device usability, making the platform accessible on tablets and mobile for the first time',
-      'Collaborated directly with backend engineers on API contracts, ensuring a seamless end-to-end user experience',
+      'Led the migration of a legacy desktop application to a modern, responsive web platform utilizing React, TypeScript, and Redux for scalable state management.',
+      'Architected and delivered the interactive UI for a no-code ML model-building platform, enabling users to design complex workflows entirely within the browser.',
+      'Collaborated directly with backend engineers on API design and data contracts, ensuring a seamless, high-performance user experience from day one.'
     ],
     tech: ['React', 'TypeScript', 'Redux', 'REST APIs', 'CSS3', 'JavaScript'],
     impact: 'Shipped a production-ready web platform from scratch in a 3-month engagement.'
