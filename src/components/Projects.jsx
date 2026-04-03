@@ -1,20 +1,22 @@
 import AnimatedSection from './AnimatedSection'
+import { Activity, GraduationCap, Video, Globe } from 'lucide-react'
 
 const PROJECTS = [
   {
-    icon: '🏥',
-    title: 'Health Inspector',
-    description: 'ML-powered disease prediction system with health record management. Built with Flask and MongoDB for real-world healthcare use cases.',
+    icon: <Activity size={24} />,
+    title: 'HealthInspector',
+    description: 'Most health apps show data. HealthInspector interprets it. Built an ML-powered disease prediction system using Scikit-learn that flags health risks from user-submitted records — with a clean management dashboard built on Flask + MongoDB.',
     stack: ['Python', 'Flask', 'MongoDB', 'Scikit-learn', 'JavaScript'],
     github: 'https://github.com/alwinjaison18/HealthInspector',
     live: null,
     featured: true,
-    year: '2024'
+    year: '2024',
+    highlight: 'ML in production — not a demo, a real health tool.'
   },
   {
-    icon: '🎓',
+    icon: <GraduationCap size={24} />,
     title: 'ScholarWise',
-    description: 'Scholarship discovery platform with smart matching algorithms. Helps students find relevant opportunities without the noise.',
+    description: 'Finding scholarships is noisy and overwhelming. ScholarWise cuts through that — a smart discovery platform with matching algorithms that surfaces relevant opportunities for students, ranked by fit.',
     stack: ['JavaScript', 'Node.js', 'MongoDB', 'Express', 'React'],
     github: 'https://github.com/alwinjaison18/ScholarWise',
     live: null,
@@ -22,9 +24,9 @@ const PROJECTS = [
     year: '2024'
   },
   {
-    icon: '📹',
-    title: 'Eljay Webinar Platform',
-    description: 'Full-featured webinar management platform built during internship at Eljay Technologies — real-time conferencing, session scheduling, role-based access.',
+    icon: <Video size={24} />,
+    title: 'Webinar Platform',
+    description: 'Built during my internship at Eljay Technologies — a full product, not a tutorial. Real-time conferencing, session scheduling, role-based access for admins and attendees. Delivered ahead of schedule.',
     stack: ['React', 'JavaScript', 'Node.js', 'REST APIs', 'CSS3'],
     github: 'https://github.com/alwinjaison18/eljay-webinar',
     live: null,
@@ -33,9 +35,9 @@ const PROJECTS = [
     internship: true
   },
   {
-    icon: '🌐',
-    title: 'Personal Portfolio v1',
-    description: 'Dark/light theme toggle, particle backgrounds, Framer Motion animations. Built before I knew what I was doing — worth every late night.',
+    icon: <Globe size={24} />,
+    title: 'Portfolio v1',
+    description: 'The predecessor. Dark/light theme toggle, Framer Motion animations, particle backgrounds. Built before I knew what production really meant — still worth every late night.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com/alwinjaison18/personal-website',
     live: 'https://brave-ocean-090752f10.2.azurestaticapps.net',
@@ -66,11 +68,10 @@ export default function Projects() {
     <section className="section projects" id="projects">
       <div className="container">
 
-        {/* Header: label + title inline, no subtitle below — different from other sections */}
         <div className="projects-header">
           <AnimatedSection>
             <span className="section-label">Projects</span>
-            <h2 className="projects-title">Things I've Built</h2>
+            <h2 className="projects-title">Things I've Shipped</h2>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <a
@@ -81,12 +82,12 @@ export default function Projects() {
               id="view-all-projects"
             >
               <GitHubIcon />
-              All repos
+              All repos ↗
             </a>
           </AnimatedSection>
         </div>
 
-        {/* Featured project — wide card, solo row */}
+        {/* Featured project — wide card */}
         {featured && (
           <AnimatedSection delay={150}>
             <div className="project-card project-card--featured">
@@ -98,6 +99,9 @@ export default function Projects() {
                   </div>
                   <h3 className="project-title">{featured.icon} {featured.title}</h3>
                   <p className="project-description">{featured.description}</p>
+                  {featured.highlight && (
+                    <p className="project-highlight">→ {featured.highlight}</p>
+                  )}
                   <div className="project-stack">
                     {featured.stack.map((t, j) => <span className="stack-tag" key={j}>{t}</span>)}
                   </div>
@@ -121,7 +125,7 @@ export default function Projects() {
           </AnimatedSection>
         )}
 
-        {/* Remaining cards — 3-col with different proportions */}
+        {/* Remaining projects */}
         <div className="projects-rest-grid">
           {rest.map((project, i) => (
             <AnimatedSection key={i} delay={200 + i * 80}>
@@ -142,7 +146,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="project-body">
-                  {project.internship && <span className="project-internship-badge">Internship</span>}
+                  {project.internship && <span className="project-internship-badge">Internship Project</span>}
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
                   <div className="project-stack">

@@ -12,32 +12,31 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="status-dot"></span>
-            Open to opportunities
+            Available for full-time roles · 2025
           </div>
 
           <h1 className="hero-title">
-            I build things<br />
-            that live on the{' '}
-            <span className="gradient-text">internet.</span>
+            Frontend engineer.<br />
+            <span className="gradient-text">Product thinker.</span>
           </h1>
 
           <p className="hero-description">
-            Software developer specializing in crafting modern, performant web
-            applications. I turn complex problems into elegant digital
-            experiences using React, Next.js and cutting-edge tech.
+            I turn complex requirements into clean, performant interfaces —
+            shipping production React apps that users actually enjoy using.
+            Currently finishing my MCA at Christ University, Bangalore.
           </p>
 
           <div className="hero-actions">
-            <a href="#projects" className="btn-primary" onClick={(e) => {
+            <a href="#projects" className="btn-primary" id="hero-cta-work" onClick={(e) => {
               e.preventDefault()
               document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
             }}>
-              View My Work
+              See My Work
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M7 17l9.2-9.2M17 17V7H7" />
               </svg>
             </a>
-            <a href="#contact" className="btn-secondary" onClick={(e) => {
+            <a href="#contact" className="btn-secondary" id="hero-cta-contact" onClick={(e) => {
               e.preventDefault()
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
             }}>
@@ -47,16 +46,16 @@ export default function Hero() {
 
           <div className="hero-stats">
             <div className="stat-item">
+              <div className="stat-number">1+</div>
+              <div className="stat-label">Year Shipped</div>
+            </div>
+            <div className="stat-item">
               <div className="stat-number">6+</div>
               <div className="stat-label">Projects Built</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">10+</div>
-              <div className="stat-label">Technologies</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">MCA</div>
-              <div className="stat-label">In Progress</div>
+              <div className="stat-number">React</div>
+              <div className="stat-label">Primary Stack</div>
             </div>
           </div>
         </div>
@@ -82,25 +81,31 @@ export default function Hero() {
                 <span className="code-bracket">,</span>
               </span>
               <span className="code-line">
-                {'  '}<span className="code-function">role</span>
+                {'  '}<span className="code-function">focus</span>
                 <span className="code-bracket">:</span>{' '}
-                <span className="code-string">"Full Stack Dev"</span>
+                <span className="code-string">"Frontend + Systems"</span>
                 <span className="code-bracket">,</span>
               </span>
               <span className="code-line">
-                {'  '}<span className="code-function">loves</span>
+                {'  '}<span className="code-function">stack</span>
                 <span className="code-bracket">:</span>{' '}
                 <span className="code-bracket">[</span>
                 <span className="code-string">"React"</span>
                 <span className="code-bracket">,</span>{' '}
-                <span className="code-string">"ML"</span>
+                <span className="code-string">"TypeScript"</span>
                 <span className="code-bracket">]</span>
                 <span className="code-bracket">,</span>
               </span>
               <span className="code-line">
-                {'  '}<span className="code-function">motto</span>
+                {'  '}<span className="code-function">shipped</span>
                 <span className="code-bracket">:</span>{' '}
-                <span className="code-string">"Ship it."</span>
+                <span className="code-string">"production code"</span>
+                <span className="code-bracket">,</span>
+              </span>
+              <span className="code-line">
+                {'  '}<span className="code-function">open</span>
+                <span className="code-bracket">:</span>{' '}
+                <span className="code-keyword">true</span>
               </span>
               <span className="code-line">
                 <span className="code-bracket">{'}'}</span>
@@ -108,10 +113,7 @@ export default function Hero() {
               </span>
               <span className="code-line">&nbsp;</span>
               <span className="code-line">
-                <span className="code-comment">// Building the future,</span>
-              </span>
-              <span className="code-line">
-                <span className="code-comment">// one commit at a time ✨</span>
+                <span className="code-comment">// Let's build something real.</span>
               </span>
             </div>
           </div>

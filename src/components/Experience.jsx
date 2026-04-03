@@ -2,31 +2,44 @@ import AnimatedSection from './AnimatedSection'
 
 const EXPERIENCES = [
   {
-    role: 'Web Development Intern',
-    company: 'Eljay Technologies',
-    duration: 'Jun 2024 — Aug 2024',
+    role: 'Frontend Developer Intern',
+    company: 'Corestrat.ai',
+    type: 'internship',
+    duration: '2026 — 3 months',
+    tagline: 'Migrated a legacy desktop app to a modern web platform, end-to-end.',
     contributions: [
-      'Developed and deployed a full-featured webinar management platform enabling real-time video conferencing and participant management',
-      'Built the frontend using React.js with responsive UI components, integrating with REST APIs for seamless data flow',
-      'Implemented user authentication, session management, and role-based access control for admin and attendees',
-      'Collaborated with a cross-functional team to design database schemas and optimize backend API performance',
-      'Delivered the project ahead of schedule, receiving commendation from the mentoring team for code quality',
+      'Led the migration of a desktop-based application to a modern React + TypeScript web platform — owned architecture decisions from day one',
+      'Designed and implemented scalable state management using Redux, resolving data-flow inconsistencies that blocked the previous system',
+      'Built the interactive UI for a no-code model-building platform — users could now design ML workflows without writing a single line of code',
+      'Improved responsiveness and cross-device usability, making the platform accessible on tablets and mobile for the first time',
+      'Collaborated directly with backend engineers on API contracts, ensuring a seamless end-to-end user experience',
     ],
-    tech: ['React', 'JavaScript', 'Node.js', 'REST APIs', 'MongoDB', 'CSS3']
+    tech: ['React', 'TypeScript', 'Redux', 'REST APIs', 'CSS3', 'JavaScript'],
+    impact: 'Shipped a production-ready web platform from scratch in a 3-month engagement.'
   },
   {
-    role: 'MCA Student — Academic Projects',
-    company: 'Christ University, Bangalore',
-    duration: '2023 — Present',
+    role: 'Web Development Intern',
+    company: 'Eljay Technologies',
+    type: 'internship',
+    duration: 'Jun 2024 — Aug 2024',
+    tagline: 'Built a full-featured webinar platform ahead of schedule.',
     contributions: [
-      'Built HealthInspector — a full-stack health monitoring app with ML-powered disease prediction using Flask and MongoDB',
-      'Developed ScholarWise — an intelligent scholarship finder platform for students with matching algorithms',
-      'Created a modern personal portfolio with interactive animations, dark/light themes, and particle backgrounds',
-      'Explored full-stack development patterns including REST API design, database architecture, and deployment pipelines',
+      'Developed and deployed a webinar management platform with real-time video conferencing and participant management',
+      'Built the frontend with React.js, integrating REST APIs for seamless data flow and live session state',
+      'Implemented user roles, session-based authentication, and admin controls for a multi-tenant setup',
+      'Delivered ahead of schedule — received commendation from the mentoring team for code quality and reliability',
     ],
-    tech: ['Python', 'Flask', 'React', 'Next.js', 'MongoDB', 'Machine Learning', 'TypeScript']
+    tech: ['React', 'JavaScript', 'Node.js', 'REST APIs', 'MongoDB', 'CSS3'],
+    impact: 'Platform deployed and used in production. Delivered a week early.'
   }
 ]
+
+const ClockIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12,6 12,12 16,14" />
+  </svg>
+)
 
 export default function Experience() {
   return (
@@ -36,7 +49,7 @@ export default function Experience() {
           <span className="section-label">Experience</span>
           <h2 className="section-title">Where I've Worked</h2>
           <p className="section-subtitle">
-            Real-world experience and academic projects that shaped my craft as a developer.
+            Real production environments. Real deadlines. Real users.
           </p>
         </AnimatedSection>
 
@@ -45,17 +58,20 @@ export default function Experience() {
             <AnimatedSection key={i} delay={i * 150}>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-card">
+                <div className={`timeline-card ${exp.type === 'internship' ? 'timeline-card--internship' : ''}`}>
+
+                  {/* Top accent bar communicates it's an internship card */}
                   <div className="timeline-header">
-                    <div>
-                      <div className="timeline-role">{exp.role}</div>
-                      <div className="timeline-company">{exp.company}</div>
+                    <div className="timeline-role-block">
+                      <div className="timeline-role-row">
+                        <div className="timeline-role">{exp.role}</div>
+                        <span className="exp-type-badge">Internship</span>
+                      </div>
+                      <div className="timeline-company">@ {exp.company}</div>
+                      <p className="timeline-tagline">{exp.tagline}</p>
                     </div>
                     <span className="timeline-duration">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <polyline points="12,6 12,12 16,14" />
-                      </svg>
+                      <ClockIcon />
                       {exp.duration}
                     </span>
                   </div>
@@ -65,6 +81,12 @@ export default function Experience() {
                       <li key={j}>{c}</li>
                     ))}
                   </ul>
+
+                  {/* Impact callout */}
+                  <div className="timeline-impact">
+                    <span className="impact-label">Impact</span>
+                    <span className="impact-text">{exp.impact}</span>
+                  </div>
 
                   <div className="timeline-tech">
                     {exp.tech.map((t, j) => (

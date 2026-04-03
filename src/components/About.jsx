@@ -1,11 +1,12 @@
 import AnimatedSection from './AnimatedSection'
+import { Zap, Target, Cpu } from 'lucide-react'
 
 export default function About() {
   return (
     <section className="section about" id="about">
       <div className="container">
 
-        {/* Asymmetric header — label sits left, title bleeds wider */}
+        {/* Asymmetric header */}
         <div className="about-header">
           <AnimatedSection>
             <span className="section-label">About Me</span>
@@ -13,28 +14,33 @@ export default function About() {
           <AnimatedSection delay={80}>
             <h2 className="about-title">
               Curious by nature.<br />
-              <em>Builder</em> by choice.
+              <em>Builder</em> by practice.
             </h2>
           </AnimatedSection>
         </div>
 
-        {/* Off-center grid: text gets more room, cards sit lower */}
         <div className="about-grid">
           <AnimatedSection delay={150} className="about-text-col">
             <div className="about-text">
               <p className="about-lead">
-                I'm <strong>Alwin Jaison</strong> — an MCA student in Bangalore who got hooked
-                on building things that live on the web and hasn't looked back since.
+                I'm <strong>Alwin Jaison</strong> — a developer based in Bangalore who fell
+                into frontend engineering and never looked back.
               </p>
               <p>
-                My journey started with a question: <em>how do you actually make these things?</em>
-                That curiosity snowballed into full-stack projects, machine learning experiments,
-                and a real internship where I shipped production code. I care about the craft —
-                clean architecture, thoughtful UX, code that a future developer won't curse.
+                It started with a simple question: <em>how do people actually build the web?</em> That
+                question turned into late nights with React, full-stack side projects, and eventually
+                real production code during my internship at Corestrat.ai — where I led the migration
+                of a desktop application to a modern web platform and shipped a no-code ML workflow builder.
               </p>
               <p>
-                Right now I'm finishing my MCA while actively looking for my next challenge.
-                If <strong>impact</strong> is on your roadmap, let's talk.
+                I care about the craft: clean component architecture, accessible interfaces,
+                state management that doesn't fight you, and code that a future developer
+                won't curse at 2am. I thrive at the intersection of engineering and product thinking.
+              </p>
+              <p>
+                Currently wrapping up my MCA at <strong>Christ University</strong> and actively
+                looking for roles where I can ship fast and grow faster. If you value
+                impact-driven engineering, <strong>let's talk.</strong>
               </p>
 
               <div className="about-meta">
@@ -43,30 +49,32 @@ export default function About() {
                   Bangalore, India
                 </span>
                 <span className="about-meta-divider">·</span>
-                <span className="about-meta-item">Open to remote</span>
+                <span className="about-meta-item">Open to remote &amp; relocate</span>
+                <span className="about-meta-divider">·</span>
+                <span className="about-meta-item">Full-time ready</span>
               </div>
             </div>
           </AnimatedSection>
 
-          {/* Staggered highlight cards — deliberately uneven */}
+          {/* Staggered highlight cards */}
           <AnimatedSection delay={250} className="about-cards-col">
             <div className="about-highlights">
               <div className="highlight-card highlight-card--wide">
-                <div className="highlight-icon">⚡</div>
+                <div className="highlight-icon"><Zap size={28} /></div>
                 <div>
-                  <div className="highlight-title">Fast by default</div>
-                  <div className="highlight-desc">I pick up new stacks quickly. React one week, Flask + ML the next.</div>
+                  <div className="highlight-title">Ships fast</div>
+                  <div className="highlight-desc">Delivered a desktop-to-web migration in a 3-month internship. Speed without chaos.</div>
                 </div>
               </div>
               <div className="highlight-card">
-                <div className="highlight-icon">🎯</div>
-                <div className="highlight-title">Problem-first</div>
-                <div className="highlight-desc">I start with the problem, not the framework.</div>
+                <div className="highlight-icon"><Target size={28} /></div>
+                <div className="highlight-title">Product-minded</div>
+                <div className="highlight-desc">I think about the user before I open my editor. UX is a feature.</div>
               </div>
               <div className="highlight-card highlight-card--accent">
-                <div className="highlight-icon">🤖</div>
-                <div className="highlight-title">ML-curious</div>
-                <div className="highlight-desc">Applied ML to health prediction in production. Loved it.</div>
+                <div className="highlight-icon"><Cpu size={28} /></div>
+                <div className="highlight-title">ML in production</div>
+                <div className="highlight-desc">Applied Scikit-learn to health prediction. Built a no-code model-builder UI at work.</div>
               </div>
             </div>
           </AnimatedSection>

@@ -1,9 +1,9 @@
 import AnimatedSection from './AnimatedSection'
 
-const FRONTEND = ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Framer Motion']
+const FRONTEND = ['React', 'TypeScript', 'Next.js', 'JavaScript', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS']
 const BACKEND  = ['Node.js', 'Express', 'Python', 'Flask', 'REST APIs', 'MongoDB']
-const ML       = ['Scikit-learn', 'Pandas', 'NumPy', 'Data Analysis', 'Prediction Models']
-const TOOLS    = ['Git', 'GitHub', 'VS Code', 'Vercel', 'Azure', 'Vite', 'Figma']
+const ML       = ['Scikit-learn', 'Pandas', 'NumPy', 'Prediction Models']
+const TOOLS    = ['Git', 'GitHub', 'VS Code', 'Vite', 'Vercel', 'Azure', 'Figma']
 
 export default function Skills() {
   return (
@@ -13,17 +13,19 @@ export default function Skills() {
         <AnimatedSection>
           <span className="section-label">Skills</span>
           <h2 className="section-title">What I work with</h2>
+          <p className="section-subtitle" style={{ marginTop: '0.5rem' }}>
+            Accumulated across real projects, internships, and a habit of building things.
+          </p>
         </AnimatedSection>
 
-        {/* Asymmetric layout: frontend gets a wide primary card, rest are smaller */}
         <div className="skills-layout">
 
-          {/* Primary — Frontend: spans full width at top */}
+          {/* Frontend — primary, widest */}
           <AnimatedSection delay={100}>
             <div className="skill-category skill-category--primary">
               <div className="category-header">
                 <span className="category-label">Frontend</span>
-                <span className="category-note">Where I spend most of my time</span>
+                <span className="category-note">Where I live. Where I thrive.</span>
               </div>
               <div className="skill-list skill-list--large">
                 {FRONTEND.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot"></span>{s}</span>)}
@@ -31,7 +33,7 @@ export default function Skills() {
             </div>
           </AnimatedSection>
 
-          {/* Secondary row: Backend + ML side by side, unequal widths */}
+          {/* Backend + ML side by side */}
           <div className="skills-row">
             <AnimatedSection delay={180}>
               <div className="skill-category skill-category--secondary">
@@ -48,19 +50,19 @@ export default function Skills() {
               <div className="skill-category skill-category--ml">
                 <div className="category-header">
                   <span className="category-label">Machine Learning</span>
-                  <span className="category-note">Still learning. Always will be.</span>
+                  <span className="category-note">Applied in production.</span>
                 </div>
                 <div className="skill-list">
                   {ML.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot skill-dot--neon"></span>{s}</span>)}
                 </div>
                 <div className="skill-category-sub">
-                  Applied in production on <em>Health Inspector</em>
+                  Used in <em>HealthInspector</em> — real disease prediction, not a tutorial.
                 </div>
               </div>
             </AnimatedSection>
           </div>
 
-          {/* Tools — horizontal strip, different visual treatment */}
+          {/* Tools strip */}
           <AnimatedSection delay={340}>
             <div className="skill-category skill-category--tools">
               <span className="category-label">Tools &amp; Platforms</span>

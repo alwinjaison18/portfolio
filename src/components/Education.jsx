@@ -1,15 +1,16 @@
 import AnimatedSection from './AnimatedSection'
+import { GraduationCap, BookOpen } from 'lucide-react'
 
 const EDUCATION = [
   {
-    icon: '🎓',
+    icon: <GraduationCap size={28} />,
     degree: 'Master of Computer Applications (MCA)',
     school: 'Christ University, Bangalore',
     year: '2023 — 2025 (Expected)',
     detail: 'Specializing in full-stack development, machine learning, and modern software engineering practices.'
   },
   {
-    icon: '📚',
+    icon: <BookOpen size={28} />,
     degree: 'Bachelor of Computer Applications (BCA)',
     school: 'Undergraduate Institution',
     year: '2020 — 2023',

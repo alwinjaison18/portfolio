@@ -1,4 +1,5 @@
 import AnimatedSection from './AnimatedSection'
+import { MapPin } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -52,7 +53,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-location">
-              <span>📍</span>
+              <MapPin size={18} color="var(--accent-neon)" />
               <span>Bangalore, India · Open to remote</span>
             </div>
           </AnimatedSection>
