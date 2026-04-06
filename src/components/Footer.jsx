@@ -18,7 +18,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/alwinjaison"
+              href="https://www.linkedin.com/in/alwinjaison-cs"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
