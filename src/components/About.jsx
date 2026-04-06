@@ -30,7 +30,7 @@ export default function About() {
                 It started with a simple question: <em>how do people actually build the web?</em> That
                 question turned into late nights with React, full-stack side projects, and eventually
                 real production code during my internship at Corestrat.ai — where I led the migration
-                of a desktop application to a modern web platform and shipped a no-code ML workflow builder.
+                of a desktop application to a modern web platform and shipped a no-code data workflow builder.
               </p>
               <p>
                 I care about the craft: clean component architecture, accessible interfaces,
@@ -73,8 +73,8 @@ export default function About() {
               </div>
               <div className="highlight-card highlight-card--accent">
                 <div className="highlight-icon"><Cpu size={28} /></div>
-                <div className="highlight-title">ML in production</div>
-                <div className="highlight-desc">Applied Scikit-learn to health prediction. Built a no-code model-builder UI at work.</div>
+                <div className="highlight-title">Complex UIs</div>
+                <div className="highlight-desc">Built interactive data dashboards. Shipped a scalable no-code workflow UI at work.</div>
               </div>
             </div>
           </AnimatedSection>

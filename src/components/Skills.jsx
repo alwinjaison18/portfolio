@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection'
 
 const FRONTEND = ['React', 'TypeScript', 'Next.js', 'JavaScript', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS']
 const BACKEND  = ['Node.js', 'Express', 'Python', 'Flask', 'REST APIs', 'MongoDB']
-const ML       = ['Scikit-learn', 'Pandas', 'NumPy', 'Prediction Models']
+const WEB_APIS = ['REST APIs', 'GraphQL', 'WebSockets', 'OAuth']
 const TOOLS    = ['Git', 'GitHub', 'VS Code', 'Vite', 'Vercel', 'Azure', 'Figma']
 
 export default function Skills() {
@@ -33,7 +33,7 @@ export default function Skills() {
             </div>
           </AnimatedSection>
 
-          {/* Backend + ML side by side */}
+          {/* Backend + APIs side by side */}
           <div className="skills-row">
             <AnimatedSection delay={180}>
               <div className="skill-category skill-category--secondary">
@@ -49,14 +49,14 @@ export default function Skills() {
             <AnimatedSection delay={260}>
               <div className="skill-category skill-category--ml">
                 <div className="category-header">
-                  <span className="category-label">Machine Learning</span>
-                  <span className="category-note">Applied in production.</span>
+                  <span className="category-label">Web & APIs</span>
+                  <span className="category-note">Scaling real apps.</span>
                 </div>
                 <div className="skill-list">
-                  {ML.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot skill-dot--neon"></span>{s}</span>)}
+                  {WEB_APIS.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot skill-dot--neon"></span>{s}</span>)}
                 </div>
                 <div className="skill-category-sub">
-                  Used in <em>HealthInspector</em> — real disease prediction, not a tutorial.
+                  Used in <em>HealthInspector</em> — complex data management, not a tutorial.
                 </div>
               </div>
             </AnimatedSection>

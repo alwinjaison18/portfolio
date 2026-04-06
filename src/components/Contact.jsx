@@ -45,9 +45,9 @@ export default function Contact() {
                 <span className="contact-link-handle">alwinjaison-cs</span>
                 <span className="contact-link-arrow">↗</span>
               </a>
-              <a href="https://brave-ocean-090752f10.2.azurestaticapps.net/resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-link-row" id="download-resume">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-link-row" id="download-resume">
                 <span className="contact-link-platform">Resume</span>
-                <span className="contact-link-handle">PDF, updated 2025</span>
+                <span className="contact-link-handle">PDF, updated 2026</span>
                 <span className="contact-link-arrow">↓</span>
               </a>
             </div>

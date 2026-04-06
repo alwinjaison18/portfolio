@@ -1,46 +1,35 @@
 import AnimatedSection from './AnimatedSection'
-import { Activity, GraduationCap, Video, Globe } from 'lucide-react'
+import { Activity, Globe, MessageSquare } from 'lucide-react'
 
 const PROJECTS = [
   {
     icon: <Activity size={24} />,
-    title: 'HealthInspector',
-    description: 'Most health apps show data. HealthInspector interprets it. Built an ML-powered disease prediction system using Scikit-learn that flags health risks from user-submitted records — with a clean management dashboard built on Flask + MongoDB.',
-    stack: ['Python', 'Flask', 'MongoDB', 'Scikit-learn', 'JavaScript'],
+    title: 'Health Inspector',
+    description: 'Developed a web-based product analysis tool that scans barcodes to assess product harm scores. Implemented a FastAPI backend for efficient data processing and ingredient analysis, and designed a robust scoring system to evaluate health risks.',
+    stack: ['React', 'FastAPI', 'HTML/CSS', 'Bootstrap'],
     github: 'https://github.com/alwinjaison18/HealthInspector',
     live: null,
     featured: true,
     year: '2024',
-    highlight: 'ML in production — not a demo, a real health tool.'
-  },
-  {
-    icon: <GraduationCap size={24} />,
-    title: 'ScholarWise',
-    description: 'Finding scholarships is noisy and overwhelming. ScholarWise cuts through that — a smart discovery platform with matching algorithms that surfaces relevant opportunities for students, ranked by fit.',
-    stack: ['JavaScript', 'Node.js', 'MongoDB', 'Express', 'React'],
-    github: 'https://github.com/alwinjaison18/ScholarWise',
-    live: null,
-    featured: false,
-    year: '2024'
-  },
-  {
-    icon: <Video size={24} />,
-    title: 'Webinar Platform',
-    description: 'Built during my internship at Eljay Technologies — a full product, not a tutorial. Real-time conferencing, session scheduling, role-based access for admins and attendees. Delivered ahead of schedule.',
-    stack: ['React', 'JavaScript', 'Node.js', 'REST APIs', 'CSS3'],
-    github: 'https://github.com/alwinjaison18/eljay-webinar',
-    live: null,
-    featured: false,
-    year: '2024',
-    internship: true
+    highlight: 'Comprehensive scoring system evaluating health risks.'
   },
   {
     icon: <Globe size={24} />,
-    title: 'Portfolio v1',
-    description: 'The predecessor. Dark/light theme toggle, Framer Motion animations, particle backgrounds. Built before I knew what production really meant — still worth every late night.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    title: 'Personal Portfolio Website',
+    description: 'Built a responsive portfolio with modern UI, animations, and theme switching to showcase work dynamically. Optimized core web vitals and overall performance using server-side rendering advantages of Next.js.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/alwinjaison18/personal-website',
-    live: 'https://brave-ocean-090752f10.2.azurestaticapps.net',
+    live: 'https://alwinjaison.me',
+    featured: false,
+    year: '2023'
+  },
+  {
+    icon: <MessageSquare size={24} />,
+    title: 'Real-Time Chat Application',
+    description: 'Developed a real-time chat system using AJAX for seamless communication without page reloads. Implemented a robust backend architecture with PHP and MySQL for secure user authentication and message storage.',
+    stack: ['JavaScript', 'AJAX', 'PHP', 'MySQL', 'HTML/CSS'],
+    github: null,
+    live: null,
     featured: false,
     year: '2023'
   }

@@ -12,11 +12,11 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="status-dot"></span>
-            Available for full-time roles · 2025
+            Available for full-time roles · 2026
           </div>
 
           <h1 className="hero-title">
-            Frontend engineer.<br />
+            Software engineer.<br />
             <span className="gradient-text">Product thinker.</span>
           </h1>
 

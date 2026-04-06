@@ -9,26 +9,25 @@ const EXPERIENCES = [
     tagline: 'Migrated a legacy desktop app to a modern web platform, end-to-end.',
     contributions: [
       'Led the migration of a legacy desktop application to a modern, responsive web platform utilizing React, TypeScript, and Redux for scalable state management.',
-      'Architected and delivered the interactive UI for a no-code ML model-building platform, enabling users to design complex workflows entirely within the browser.',
+      'Architected and delivered the interactive UI for a no-code internal tooling platform, enabling users to design complex business workflows entirely within the browser.',
       'Collaborated directly with backend engineers on API design and data contracts, ensuring a seamless, high-performance user experience from day one.'
     ],
     tech: ['React', 'TypeScript', 'Redux', 'REST APIs', 'CSS3', 'JavaScript'],
     impact: 'Shipped a production-ready web platform from scratch in a 3-month engagement.'
   },
   {
-    role: 'Web Development Intern',
-    company: 'Eljay Technologies',
-    type: 'internship',
-    duration: 'Jun 2024 — Aug 2024',
-    tagline: 'Built a full-featured webinar platform ahead of schedule.',
+    role: 'Freelance Social Media Marketing',
+    company: 'Eljay Medical Staffing',
+    type: 'freelance',
+    duration: 'Jun 2020 — Present',
+    tagline: 'Executed content strategies tailored to the healthcare staffing industry.',
     contributions: [
-      'Developed and deployed a webinar management platform with real-time video conferencing and participant management',
-      'Built the frontend with React.js, integrating REST APIs for seamless data flow and live session state',
-      'Implemented user roles, session-based authentication, and admin controls for a multi-tenant setup',
-      'Delivered ahead of schedule — received commendation from the mentoring team for code quality and reliability',
+      'Managed and optimized company presence across LinkedIn, Instagram, and Facebook.',
+      'Analyzed campaign performance and delivered actionable insights to improve engagement.',
+      'Increased audience interaction through targeted campaigns and consistent engagement strategies.'
     ],
-    tech: ['React', 'JavaScript', 'Node.js', 'REST APIs', 'MongoDB', 'CSS3'],
-    impact: 'Platform deployed and used in production. Delivered a week early.'
+    tech: ['Content Strategy', 'Social Media Management', 'Analytics'],
+    impact: 'Consistently increased audience interaction and engagement.'
   }
 ]
 
