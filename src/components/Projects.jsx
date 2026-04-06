@@ -16,12 +16,12 @@ const PROJECTS = [
   {
     icon: <Globe size={24} />,
     title: 'Personal Portfolio Website',
-    description: 'Built a responsive portfolio with modern UI, animations, and theme switching to showcase work dynamically. Optimized core web vitals and overall performance using server-side rendering advantages of Next.js.',
-    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/alwinjaison18/personal-website',
+    description: 'Built a responsive, human-designed portfolio with custom CSS layouts, modern animations, and modular React components. Deployed via CI/CD pipelines to Azure Static Web Apps.',
+    stack: ['React', 'Vite', 'HTML/CSS', 'Azure', 'JavaScript'],
+    github: 'https://github.com/alwinjaison18/portfolio',
     live: 'https://alwinjaison.me',
     featured: false,
-    year: '2023'
+    year: '2026'
   }
 ]
 
