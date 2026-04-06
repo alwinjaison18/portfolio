@@ -45,7 +45,7 @@ export default function Contact() {
                 <span className="contact-link-handle">alwinjaison-cs</span>
                 <span className="contact-link-arrow">↗</span>
               </a>
-              <a href="/Alwin_Jaison_Resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-link-row" id="download-resume">
+              <a href="/Alwin_Jaison.pdf" target="_blank" rel="noopener noreferrer" className="contact-link-row" id="download-resume">
                 <span className="contact-link-platform">Resume</span>
                 <span className="contact-link-handle">PDF, updated 2026</span>
                 <span className="contact-link-arrow">↓</span>
