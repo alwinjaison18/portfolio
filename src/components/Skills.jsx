@@ -1,9 +1,9 @@
 import AnimatedSection from './AnimatedSection'
 
-const FRONTEND = ['React', 'TypeScript', 'Next.js', 'JavaScript', 'Redux', 'HTML5', 'CSS3', 'Tailwind CSS']
-const BACKEND  = ['Node.js', 'Express', 'Python', 'Flask', 'REST APIs', 'MongoDB']
-const WEB_APIS = ['REST APIs', 'GraphQL', 'WebSockets', 'OAuth']
-const TOOLS    = ['Git', 'GitHub', 'VS Code', 'Vite', 'Vercel', 'Azure', 'Figma']
+const FRONTEND = ['React', 'Next.js', 'Redux', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'MUI']
+const BACKEND  = ['Node.js', 'FastAPI', 'Python', 'Java', 'C/C++', 'PHP']
+const DATABASES = ['MongoDB', 'MySQL', 'Firebase', 'REST API', 'Azure']
+const TOOLS    = ['Git', 'Docker', 'VS Code', 'API Testing', 'Vite']
 
 export default function Skills() {
   return (
@@ -49,11 +49,11 @@ export default function Skills() {
             <AnimatedSection delay={260}>
               <div className="skill-category skill-category--ml">
                 <div className="category-header">
-                  <span className="category-label">Web & APIs</span>
-                  <span className="category-note">Scaling real apps.</span>
+                  <span className="category-label">Databases & Cloud</span>
+                  <span className="category-note">Scalable infrastructure.</span>
                 </div>
                 <div className="skill-list">
-                  {WEB_APIS.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot skill-dot--neon"></span>{s}</span>)}
+                  {DATABASES.map((s, i) => <span className="skill-item" key={i}><span className="skill-dot skill-dot--neon"></span>{s}</span>)}
                 </div>
                 <div className="skill-category-sub">
                   Used in <em>HealthInspector</em> — complex data management, not a tutorial.

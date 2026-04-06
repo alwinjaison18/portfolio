@@ -1,5 +1,5 @@
 import AnimatedSection from './AnimatedSection'
-import { Activity, Globe, MessageSquare } from 'lucide-react'
+import { Activity, Globe } from 'lucide-react'
 
 const PROJECTS = [
   {
@@ -20,16 +20,6 @@ const PROJECTS = [
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/alwinjaison18/personal-website',
     live: 'https://alwinjaison.me',
-    featured: false,
-    year: '2023'
-  },
-  {
-    icon: <MessageSquare size={24} />,
-    title: 'Real-Time Chat Application',
-    description: 'Developed a real-time chat system using AJAX for seamless communication without page reloads. Implemented a robust backend architecture with PHP and MySQL for secure user authentication and message storage.',
-    stack: ['JavaScript', 'AJAX', 'PHP', 'MySQL', 'HTML/CSS'],
-    github: null,
-    live: null,
     featured: false,
     year: '2023'
   }

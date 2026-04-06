@@ -30,7 +30,7 @@ export default function About() {
                 It started with a simple question: <em>how do people actually build the web?</em> That
                 question turned into late nights with React, full-stack side projects, and eventually
                 real production code during my internship at Corestrat.ai — where I led the migration
-                of a desktop application to a modern web platform and shipped a no-code data workflow builder.
+                of a legacy desktop application to a scalable web-based platform using React, TypeScript, and Redux.
               </p>
               <p>
                 I care about the craft: clean component architecture, accessible interfaces,
