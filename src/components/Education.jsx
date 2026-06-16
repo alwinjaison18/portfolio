@@ -1,22 +1,24 @@
-import AnimatedSection from './AnimatedSection'
-import { GraduationCap, BookOpen } from 'lucide-react'
+import AnimatedSection from "./AnimatedSection";
+import { GraduationCap, BookOpen } from "lucide-react";
 
 const EDUCATION = [
   {
     icon: <GraduationCap size={28} />,
-    degree: 'Master of Computer Applications (MCA)',
-    school: 'Christ University, Bangalore',
-    year: '2023 — 2025 (Expected)',
-    detail: 'Specializing in full-stack development, machine learning, and modern software engineering practices.'
+    degree: "Master of Computer Applications (MCA)",
+    school: "Christ University, Bangalore",
+    year: "2023 — 2025 ",
+    detail:
+      "Specializing in full-stack development, machine learning, and modern software engineering practices.",
   },
   {
     icon: <BookOpen size={28} />,
-    degree: 'Bachelor of Computer Applications (BCA)',
-    school: 'Undergraduate Institution',
-    year: '2020 — 2023',
-    detail: 'Foundational studies in computer science, programming, data structures, and algorithms.'
-  }
-]
+    degree: "Bachelor of Computer Applications (BCA)",
+    school: "St. Joseph's University, Bangalore",
+    year: "2020 — 2023",
+    detail:
+      "Foundational studies in computer science, programming, data structures, and algorithms.",
+  },
+];
 
 export default function Education() {
   return (
@@ -39,7 +41,14 @@ export default function Education() {
                 <div className="education-school">{edu.school}</div>
                 <div className="education-year">{edu.year}</div>
                 {edu.detail && (
-                  <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+                  <p
+                    style={{
+                      marginTop: "1rem",
+                      fontSize: "0.875rem",
+                      color: "var(--text-secondary)",
+                      lineHeight: 1.7,
+                    }}
+                  >
                     {edu.detail}
                   </p>
                 )}
@@ -49,5 +58,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  )
+  );
 }

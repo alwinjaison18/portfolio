@@ -4,6 +4,7 @@ const EXPERIENCES = [
   {
     role: "Frontend Developer Intern",
     company: "Corestrat",
+    companyUrl: null,
     type: "internship",
     duration: "2026 — 3 months",
     tagline:
@@ -18,19 +19,31 @@ const EXPERIENCES = [
       "Shipped a production-ready web platform from scratch in a 3-month engagement.",
   },
   {
-    role: "Social Media Marketing",
-    company: "Eljay Medical Staffing",
+    role: "Freelance Full-Stack Developer & Digital Operations Specialist",
+    company: "Eljay Medical Staffing India Pvt. Ltd. (Bangalore, Karnataka)",
+    companyUrl: "https://www.eljay.in/",
     type: "freelance",
     duration: "Jun 2020 — Present",
     tagline:
-      "Executed content strategies tailored to the healthcare staffing industry.",
+      "Built digital systems across web, billing, operations, and client workflow management.",
     contributions: [
-      "Managed and optimized company presence across LinkedIn, Instagram, and Facebook.",
-      "Analyzed campaign performance and delivered actionable insights to improve engagement.",
-      "Increased audience interaction through targeted campaigns and consistent engagement strategies.",
+      "Designed and developed the company website (eljay.in) with Next.js and Vercel, including SEO infrastructure such as sitemap, structured data, staff/candidate management, and a blog system.",
+      "Built a full-stack invoice generation system with Node.js/Express and MongoDB, automating client billing workflows and removing manual documentation overhead.",
+      "Engineered Excel-based attendance tracking and payroll calculation systems for deployed employees.",
+      "Managed hospital client onboarding workflows and the lead pipeline.",
     ],
-    tech: ["Content Strategy", "Social Media Management", "Analytics"],
-    impact: "Consistently increased audience interaction and engagement.",
+    tech: [
+      "Next.js",
+      "Vercel",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "SEO",
+      "Excel Automation",
+      "Operations Management",
+    ],
+    impact:
+      "Improved digital visibility, automated billing and payroll operations, and streamlined client onboarding processes.",
   },
 ];
 
@@ -81,7 +94,20 @@ export default function Experience() {
                             : "Internship"}
                         </span>
                       </div>
-                      <div className="timeline-company">@ {exp.company}</div>
+                      <div className="timeline-company">
+                        @{" "}
+                        {exp.companyUrl ? (
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          exp.company
+                        )}
+                      </div>
                       <p className="timeline-tagline">{exp.tagline}</p>
                     </div>
                     <span className="timeline-duration">
